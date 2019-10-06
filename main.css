@@ -1,0 +1,148 @@
+* {
+  margin: auto;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  height: auto;
+  width: 100%;
+}
+
+.header {
+  display: grid;
+  height: 838px;
+  background-color: red;
+}
+
+.projects {
+  display: grid;
+  height: 665px;
+}
+
+.video {
+  display: grid;
+  height: 653px;
+}
+
+.personal_data {
+  display: grid;
+  height: 443px;
+}
+
+.repair_types {
+  display: grid;
+  height: auto;
+}
+
+.free_service {
+  display: grid;
+  height: 883px;
+}
+
+.styles {
+  display: grid;
+  height: 1118px;
+}
+
+.price {
+  display: grid;
+  height: auto;
+}
+
+.how_work {
+  display: grid;
+  height: 839px;
+}
+
+.team {
+  display: grid;
+  height: auto;
+}
+
+.clients {
+  display: grid;
+  height: auto;
+}
+
+.map {
+  display: grid;
+  height: 1295px;
+}
+
+.footer {
+  display: grid;
+  height: 133px;
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+    height: auto;
+  }
+
+  .header {
+    display: grid;
+    height: 533px;
+    background-color: red;
+  }
+
+  .projects {
+    display: grid;
+    height: 700px;
+  }
+
+  .video {
+    display: grid;
+    height: 552px;
+  }
+
+  .personal_data {
+    display: grid;
+    height: 355px;
+  }
+
+  .repair_types {
+    display: grid;
+    height: auto;
+  }
+
+  .free_service {
+    display: none;
+  }
+
+  .styles {
+    display: grid;
+    height: 590px;
+  }
+
+  .price {
+    display: grid;
+    height: auto;
+  }
+
+  .how_work {
+    display: none;
+  }
+
+  .team {
+    display: grid;
+    height: auto;
+  }
+
+  .clients {
+    display: none;
+  }
+
+  .map {
+    display: grid;
+    height: 875px;
+  }
+
+  .footer {
+    display: grid;
+    height: 171px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
