@@ -12,6 +12,7 @@ body {
 
 .header {
     display: grid;
+    justify-items: stretch;
     height: 838px;
     background-color: red;
 }
@@ -76,6 +77,76 @@ body {
     height: 133px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 1150px) {
+    * {
+        margin: auto;
+        padding: 0;
+    }
+    
+    body {
+        max-width: 1440px;
+        height: auto;
+        width: 100%;
+    }
+    
+    
+    .header {
+        height: 838/1440*1150px;
+        background-color: red;
+    }
+    
+    .projects {
+        height: 665/1440*1150px;
+    }
+    
+    .video {
+        height: 653/1440*1150px;
+    }
+    
+    .personal_data {
+        height: 443/1440*1150px;
+    }
+    
+    .repair_types {
+        height: auto;
+    }
+    
+    .free_service {
+        height: 883/1440*1150px;
+    }
+    
+    .styles {
+        height: 1118/1440*1150px;
+    }
+    
+    .price {
+        height: auto;
+    }
+    
+    .how_work {
+        height: 839/1440*1150px;
+    }
+    
+    .team {
+        height: auto;
+    }
+    
+    .clients {
+        height: auto;
+    }
+    
+    .map {
+        height: 1295/1440*1150px;
+    }
+    
+    .footer {
+        height: 133/1440*1150px;
+    }
+}
+
+
+
+
 @media screen and (max-width: 375px) {
     body {
         max-width: 375px;
@@ -83,28 +154,23 @@ body {
     }
     
     .header {
-        display: grid;
         height: 533px;
         background-color: red;
     }
     
     .projects {
-        display: grid;
         height: 700px;
     }
     
     .video {
-        display: grid;
         height: 552px;
     }
     
     .personal_data {
-        display: grid;
         height: 355px;
     }
     
     .repair_types {
-        display: grid;
         height: auto;
     }
     
@@ -113,12 +179,10 @@ body {
     }
     
     .styles {
-        display: grid;
         height: 590px;
     }
     
     .price {
-        display: grid;
         height: auto;
     }
     
@@ -127,7 +191,6 @@ body {
     }
     
     .team {
-        display: grid;
         height: auto;
     }
     
@@ -136,12 +199,10 @@ body {
     }
     
     .map {
-        display: grid;
         height: 875px;
     }
     
     .footer {
-        display: grid;
         height: 171px;
     }
 

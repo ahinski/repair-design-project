@@ -11,6 +11,7 @@ body {
 
 .header {
   display: grid;
+  justify-items: stretch;
   height: 838px;
   background-color: red;
 }
@@ -75,6 +76,71 @@ body {
   height: 133px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 1150px) {
+  * {
+    margin: auto;
+    padding: 0;
+  }
+
+  body {
+    max-width: 1440px;
+    height: auto;
+    width: 100%;
+  }
+
+  .header {
+    height: 669.2361111111px;
+    background-color: red;
+  }
+
+  .projects {
+    height: 531.0763888889px;
+  }
+
+  .video {
+    height: 521.4930555556px;
+  }
+
+  .personal_data {
+    height: 353.7847222222px;
+  }
+
+  .repair_types {
+    height: auto;
+  }
+
+  .free_service {
+    height: 705.1736111111px;
+  }
+
+  .styles {
+    height: 892.8472222222px;
+  }
+
+  .price {
+    height: auto;
+  }
+
+  .how_work {
+    height: 670.0347222222px;
+  }
+
+  .team {
+    height: auto;
+  }
+
+  .clients {
+    height: auto;
+  }
+
+  .map {
+    height: 1034.2013888889px;
+  }
+
+  .footer {
+    height: 106.2152777778px;
+  }
+}
 @media screen and (max-width: 375px) {
   body {
     max-width: 375px;
@@ -82,28 +148,23 @@ body {
   }
 
   .header {
-    display: grid;
     height: 533px;
     background-color: red;
   }
 
   .projects {
-    display: grid;
     height: 700px;
   }
 
   .video {
-    display: grid;
     height: 552px;
   }
 
   .personal_data {
-    display: grid;
     height: 355px;
   }
 
   .repair_types {
-    display: grid;
     height: auto;
   }
 
@@ -112,12 +173,10 @@ body {
   }
 
   .styles {
-    display: grid;
     height: 590px;
   }
 
   .price {
-    display: grid;
     height: auto;
   }
 
@@ -126,7 +185,6 @@ body {
   }
 
   .team {
-    display: grid;
     height: auto;
   }
 
@@ -135,14 +193,64 @@ body {
   }
 
   .map {
-    display: grid;
     height: 875px;
   }
 
   .footer {
-    display: grid;
     height: 171px;
   }
+}
+@font-face {
+  font-family: "Yeseva One";
+  src: local("Yeseva One"), local("YesevaOne"), url("assets/fonts/yeseva/yesevaone.woff2") format("woff2"), url("assets/fonts/yeseva/yesevaone.woff") format("woff"), url("assets/fonts/yeseva/yesevaone.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Thin";
+  src: url("assets/fonts/proximanova/ProximaNovaT-Thin.eot");
+  src: url("assets/fonts/proximanova/ProximaNovaT-Thin.eot?#iefix") format("embedded-opentype"), url("assets/fonts/proximanova/ProximaNovaT-Thin.woff") format("woff"), url("assets/fonts/proximanova/ProximaNovaT-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futurabook";
+  src: url("assets/fonts/futurabook/futurabookc.otf");
+}
+@font-face {
+  font-family: "futurademic";
+  src: url("assets/fonts/futurademic/futurademic.otf");
+}
+@font-face {
+  font-family: "futuramediumc";
+  src: url("assets/fonts/futuramediumc/futuramediumc.otf");
+}
+h1 {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5em;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1, 25em;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1, 7em;
+  line-height: 37px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

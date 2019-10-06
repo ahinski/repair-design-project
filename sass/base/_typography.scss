@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Yeseva One';
+    src: local('Yeseva One'), local('YesevaOne'), url('assets/fonts/yeseva/yesevaone.woff2') 
+    format('woff2'), url('assets/fonts/yeseva/yesevaone.woff') format('woff'), 
+    url('assets/fonts/yeseva/yesevaone.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Thin';
+    src: url('assets/fonts/proximanova/ProximaNovaT-Thin.eot');
+    src: url('assets/fonts/proximanova/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+    url('assets/fonts/proximanova/ProximaNovaT-Thin.woff') format('woff'),
+    url('assets/fonts/proximanova/ProximaNovaT-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futurabook';
+    src: url('assets/fonts/futurabook/futurabookc.otf');
+}
+
+
+@font-face {
+    font-family: 'futurademic';
+    src: url('assets/fonts/futurademic/futurademic.otf');
+}
+
+
+@font-face {
+    font-family: 'futuramediumc';
+    src: url('assets/fonts/futuramediumc/futuramediumc.otf');
+}
