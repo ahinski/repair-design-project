@@ -1,0 +1,116 @@
+.clients {
+    grid-template-areas: 
+    'header'
+    'handshaking'
+    'paragraph'
+    'content';
+    grid-template-rows: 60px 60px 1fr;
+    padding-top: 50px;
+    background-color: white;
+}
+.clients-header {
+    grid-area: header;
+    margin: 0;
+    align-self: end;
+    h6 {
+        margin: 0;
+        color: $lighter-dark-color;
+    }
+}
+.clients-handshaking {
+    grid-area: handshaking;
+    align-self: center;
+    justify-self: center;
+}
+.clients-paragraph {
+    grid-area: paragraph;
+    text-align: center;
+    font-family: 'Futurabook';
+    font-size: 1.125em;
+    line-height: 27px;
+    text-align: center;
+    color: $lighter-dark-color;
+}
+.clients-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-around;
+    width: 85%;
+    margin-top: 40px;
+    width: 85%;
+}
+.clients-content-block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    width: 376px;
+    height: 428px;
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: -3px 12px 54px -39px rgba(0, 0, 0, 0.75);
+}
+.clients-content-block-head {
+    display: flex;
+    justify-content: space-around;
+    img {
+        flex-basis: 20%;
+        align-self: center;
+        width: 76px;
+        height: 77px;
+    }
+    h5 {
+        flex-basis: 70%;
+        text-transform: none;
+    }
+}
+.clients-content-block-paragraph {
+    p {
+        font-family: 'Futurabook';
+        font-size: 0.9375em;
+        line-height: 180%;
+        color: $white-gray;
+    }
+}
+.clients-content-block-head, .clients-content-block-paragraph {
+    width: 324px;
+    align-self: center;
+}
+.clients-content-block-foot {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 294px;
+    height: 54px;
+    top: 401px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 24px;
+    color: white;
+    text-transform: uppercase;
+}
+.clients-content-block-foot-1 {
+    flex-basis: 44.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $main-color;
+    box-shadow: 0px 0px 30px -7px  $main-color;
+    aside {
+        margin-left: -10px;
+    }
+}
+.clients-content-block-foot-2 {
+    flex-basis: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $main-color;
+    box-shadow: 0px 0px 30px -7px  $main-color;
+    aside {
+        margin-left: -30px;
+    }
+}

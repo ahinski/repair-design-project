@@ -1,0 +1,179 @@
+.free_service {
+    position: relative;
+    padding-top: 155px;
+    padding-bottom: 90px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.free_service-ellipse {  
+    grid-area: ellipse;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: 
+       linear-gradient(#fff,#fff) padding-box,
+       linear-gradient(to right, #fff 0%, #fff 20%, #fff 20%, #E3B873 100%) border-box;
+    border: 3px solid transparent;
+    z-index: 2;
+    @media screen and (max-width: 1160px) {
+        display: none;
+    }
+}
+.ellipse-image {
+    background:url("assets/images/free_service_back.jpg");
+}
+.free_service-form {
+    display: flex;
+    flex-direction: column;
+    width: 506px;
+    height: 509px;
+    background-color: $dark-color;
+}
+.free_service-form-content {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h5 {
+        font-family: 'FuturaDemiC';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.25em;
+        color: white;
+        line-height: 25px;
+        text-align: center;
+        text-transform: none;
+    }
+    .free_name_input, .free_phone_input, .free_email_input {
+        flex-basis: 70px;
+        input {
+            width: 408px;
+            height: auto;
+            position: static;
+            opacity: 1;
+            margin: 0;
+            padding: 2px 20px 5px 0;
+            overflow: visible;
+            border: 0 solid #b7b7b7;
+            border-bottom-width: 1px;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+            font: normal 18px/normal "Futurabook", Helvetica, sans-serif;
+            color: white;
+            -o-text-overflow: clip;
+            text-overflow: clip;
+            background: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            text-shadow: none;
+            -webkit-transition: none;
+            -moz-transition: none;
+            -o-transition: none;
+            transition: none;
+            -webkit-transform: none;
+            transform: none;
+            -webkit-transform-origin: 50% 50% 0;
+            transform-origin: 50% 50% 0;
+            &::-webkit-input-placeholder { 
+                color: white;
+            }
+            &:-moz-placeholder { 
+                color: white;
+            }
+            &::-moz-placeholder { 
+                color: white;
+            }
+            &:-ms-input-placeholder { 
+                color: white;
+            }
+            &:active {
+                border: 1px solid $white_gray;
+            }
+        }
+        label {
+            margin: 0;
+            font-family: 'FuturaBook';
+            font-size: 0.9375em;
+            color: $white_gray;
+        }
+    }
+}
+    .free_service-submit {
+        margin-top: 70px;
+        margin-left: 200px;
+        width: 213px;
+        height: 51px;
+        font-family: 'futurademic';
+        font-size: 0.9375em;
+        color: white;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $main-color;
+        border-radius:2px;
+        border: 0;
+        display:inline-block;
+        cursor:pointer;
+        text-decoration:none;
+        &:hover {
+            box-shadow: 0px 11px 48px -8px  $main-color;
+            text-decoration: underline;
+        }
+    }
+.free_service-background {
+    position: absolute;
+}
+.free-agreement_checkbox {
+    label {
+        font-family: 'Futurabook';
+        font-size: 1em;
+        line-height: 22px;
+        color: white;
+        margin: 0;
+    }
+}
+
+.free-regular-checkbox {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid $lighter-dark-color;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 7px;
+    margin: -2px;
+	display: inline-block;
+	position: relative;
+}
+
+.free-regular-checkbox:checked {
+	background-color: $main-color;
+	border: 0;
+    color: white;
+    padding: 7px;
+    margin: -2px;
+}
+
+.free-regular-checkbox:checked:after {
+	content: '\2713';
+	font-size: 14px;
+	position: absolute;
+	top: -2px;
+	left: 0px;
+	color: white;
+}
+.free-form-aside {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    aside {
+        font-family: 'FuturaDemiC';
+        font-size: 20px;
+        line-height: 25px;
+        color: $main-color;
+    }
+    @media screen and (max-width: 1160px) {
+        display: none;
+    }
+}

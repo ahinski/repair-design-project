@@ -1,7 +1,15 @@
+$body-color: #363636;
 $dark-color: #131313;
 $light-color: #FFFF;
 $main-color: #E3B873;
+$gray: rgba(255, 255, 255, 0.3);
+$white_gray: #959595;
+$lighter-dark-color: #363636;
+$foot-back-color: #1C1C1C;
 
+@media screen and (max-width: 500px) {
+    $dark-color: #181818;
+}
 
 h1 {
     font-family: 'Yeseva One';
@@ -13,20 +21,47 @@ h1 {
 }
 
 h3 {
+    font-family: 'FuturaDemiC';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875em;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+}
+
+h2 {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: normal;
-    font-size: 1,25em;
+    font-size: 1.7em;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25em;
     line-height: 28px;
     text-align: center;
     text-transform: uppercase;
 }
-
-h2 {
-    font-family: Yeseva One;
+h5 {
+    font-family: 'Yeseva One';
     font-style: normal;
     font-weight: normal;
-    font-size: 1,7em;
-    line-height: 37px;
+    font-size: 1.125em;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+h4 {
+    font-family: 'FuturaDemiC';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9375em;
+    line-height: 21px;
     text-transform: uppercase;
 }

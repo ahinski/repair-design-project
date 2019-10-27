@@ -1,0 +1,30 @@
+.video {
+    text-align: center;
+    grid-template-areas:
+     'header'
+     'vector'
+     'video';
+     background: $dark-color;
+}
+.video-header {
+    grid-area: header;
+    align-self: end;
+    color: white;
+    margin-bottom: 0px;
+}
+.video-camera {
+    grid-area: vector;
+    align-items: start;
+    margin-top: 15px;
+}
+.video-window {
+    grid-area: video;
+    align-items: start;
+    margin: 0 auto;
+    width: 817px;
+    height: 434px;
+    @media screen and (max-width: 817px) {
+        width: 100%;
+        height: auto;
+    }
+}

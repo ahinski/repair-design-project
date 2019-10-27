@@ -1,0 +1,97 @@
+.styles {
+    position: relative;
+    background-color: white;
+}
+.mobile_styles {
+    text-align: center;
+    h2 {
+        color: $main-color;
+    }
+    @media screen and (max-width: 550px) {
+        background: linear-gradient(to top, #131313 0%, #131313 39%, white 39%);
+    }
+    @media screen and (min-width: 700px) {
+        display: none;
+    }
+}
+.styles-background {
+    position: absolute;
+    width: 100%;
+    height: 864px;
+    margin-top: 112px;
+    z-index: 1;
+    background: url(assets/images/styles-background-image.jpg) 100% 0% no-repeat;
+    @media screen and (max-width: 700px) {
+        background: transparent;
+    }
+}
+.styles-content {
+    display: grid;
+    grid-template-areas: 
+    'list images';
+    grid-template-columns: 1fr 60%;
+    z-index: 2;
+    @media screen and (max-width: 700px)  {
+        display: none;
+    }
+}
+.styles-content-list {
+    grid-area: list;
+    display: flex;
+    flex-direction: column;
+    margin-left: 112px;
+    h2 {
+        margin-top: 250px;
+        color: $main-color;
+    }
+    button {
+        width: 180px;
+        flex-basis: 4%;
+        font-family: 'Proxima Nova Thin';
+        font-size: 1.125em;
+        line-height: 34px;
+        text-align: left;
+        color: white;
+        background-color:transparent;
+        border:0;
+        cursor:pointer;
+        &:hover {
+            background-color:transparent;
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+}
+.styles-content-images {
+    grid-area: images;
+    display: grid;
+    grid-template-areas: 
+    'column1 column2';
+    justify-content: space-around;
+}
+.styles-content-images-column_1 {
+    grid-area: column1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    img {
+        margin-top: 50px;
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
+    }
+}
+.styles-content-images-column_2 {
+    grid-area: column2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .styles-content-image-4 {
+        margin-top: 50px;
+    }
+    @media screen and (max-width: 1160px) {
+        display: none;
+    }
+}

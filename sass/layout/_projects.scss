@@ -1,0 +1,183 @@
+.projects {
+    grid-template-areas:
+    'title title'
+    'comp slider'
+    'adv slider'
+    'circles slider';
+    grid-template-rows: 140px 190px 200px 50px;
+    grid-template-columns: 38% 1fr;
+    background-color: $dark-color;
+    @media screen and (max-width: 1160px) {
+        grid-template-areas: 
+        'comp'
+        'slider'
+        'adv';
+        height: auto;
+        justify-content: center;
+        grid-template-rows: 25% 55% 20%;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    @media screen and (max-width: 550px) {
+        font-size: 11px;
+        grid-template-rows: 25% 49% 23%;
+    }
+}
+.projects-slider_nav {
+    display: flex;
+    grid-area: title;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 53px;
+    padding-right: 5%;
+    button {
+        flex-basis: 18%;
+        height: 20px;
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: $gray;
+        background-color:transparent;
+        border:0;
+        display:inline-block;
+        text-transform: uppercase;
+        cursor:pointer;
+        &:hover {
+            background-color:transparent;
+            color: $main-color;
+            text-decoration: underline;
+        }
+        &:active {
+            border: 0;
+            top:1px;
+        }
+    }
+    @media screen and (max-width: 1160px) {
+        display: none;
+    }
+}
+.projects-completed {
+    grid-area: comp;
+    display: grid;
+    margin-left: 10%;
+    grid-template-areas:
+    'header'
+    'paragraph';
+    grid-template-rows: 90px 100px;
+    @media screen and (max-width: 1160px) {
+        margin: 0;
+    }
+}
+.projects-completed-header {
+    grid-area: header;
+    align-self: end;
+    color: $main-color;
+    @media screen and (max-width: 550px) {
+        align-self: center;
+    }
+}
+.projects-completed-paragraph {
+    grid-area: paragraph;
+    align-self: end;
+    color: white;
+    font-family: 'Futurabook';
+    font-size: 1.125em;
+    line-height: 29px;
+}
+.projects-advanced {
+    margin-left: 10%;
+    grid-area: adv;
+    display: grid;
+    grid-template-areas:
+    'city' 'area'
+    'time' 'cost';
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    h5 {
+        color: $main-color;
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 10px;
+        font-family: 'Futurabook';
+        font-size: 0.9375em;
+        line-height: 20px;
+        color: white;
+    }
+    @media screen and (max-width: 1160px) {
+        margin: 0;
+    }
+}
+.projects-slider {
+    grid-area: slider;
+    position: relative;
+    margin-bottom: 60px;
+    @media screen and (max-width: 550px) {
+        margin: 0;
+        margin-top: 40px;
+    }
+}
+.projects-slider-image-1 {
+    max-width: 90%;
+    @media screen and (max-width: 1160px) {
+        max-width: 80%
+    }
+    @media screen and (max-width: 550px) {
+        width: 340px;
+    }
+}
+.projects-slider-image-2 {
+    margin-left: 66px;
+    max-width: 90%;
+    @media screen and (max-width: 1457px) {
+        display: none;
+    }
+}
+.slider_button {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    border: none;
+    cursor:pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    &:hover {
+        top: 41%;
+    }
+    @media screen and (max-width: 1160px) {
+        display: none;
+    }
+}
+.project-advanced-circles {
+    grid-area: circles;
+    position: relative;  
+    width: 100%;
+    margin: 50px;
+    margin-left: 35%;
+    @media screen and (max-width: 1160px) {
+        display: none;
+    }
+  }
+  .project-advanced-circles-pagination {
+      position: absolute;
+      left: 0;
+      &:nth-child(2) { left: 30px; }
+      &:nth-child(3) { left: 60px; }
+      &:nth-child(4) { left: 90px; }
+  }
+  .project-advanced-circles-circle {
+    position: absolute;
+    left: 0;
+    width: 10px;
+    height: 10px;  
+    background-color: $white-gray;
+    border: 1px solid $white_gray;
+    border-radius: 100%;
+  }
+  
+  .active {
+    background: white;
+  }

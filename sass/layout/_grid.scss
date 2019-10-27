@@ -1,209 +1,127 @@
-* {
-    margin: auto;
-    padding: 0;
-}
+@import '../abstracts/variables';
 
 body {
+    margin: auto;
     max-width: 1440px;
     height: auto;
     width: 100%;
+    background-color: $body-color;
 }
-
-
 .header {
     display: grid;
-    justify-items: stretch;
     height: 838px;
-    background-color: red;
 }
-
 .projects {
     display: grid;
     height: 665px;
 }
-
 .video {
     display: grid;
-    height: 653px;
+    height: 633px;
 }
-
 .personal_data {
     display: grid;
     height: 443px;
 }
-
 .repair_types {
     display: grid;
     height: auto;
 }
-
 .free_service {
-    display: grid;
-    height: 883px;
+    display: flex;
+    height: auto;
 }
-
 .styles {
     display: grid;
     height: 1118px;
 }
-
-.price {
+.design_price {
     display: grid;
     height: auto;
 }
-
 .how_work {
-    display: grid;
-    height: 839px;
+    display: flex;
+    height: 800px;
 }
-
 .team {
     display: grid;
     height: auto;
 }
-
 .clients {
     display: grid;
     height: auto;
 }
-
-.map {
+.questions {
     display: grid;
-    height: 1295px;
+    height: 602px;
 }
-
+.map {
+    display: flex;
+    height: auto;
+}
 .footer {
     display: grid;
     height: 133px;
 }
-
-@media screen and (min-width: 375px) and (max-width: 1150px) {
-    * {
-        margin: auto;
-        padding: 0;
-    }
-    
-    body {
-        max-width: 1440px;
-        height: auto;
-        width: 100%;
-    }
-    
-    
-    .header {
-        height: 838/1440*1150px;
-        background-color: red;
-    }
-    
-    .projects {
-        height: 665/1440*1150px;
-    }
-    
-    .video {
-        height: 653/1440*1150px;
-    }
-    
-    .personal_data {
-        height: 443/1440*1150px;
-    }
-    
-    .repair_types {
-        height: auto;
-    }
-    
-    .free_service {
-        height: 883/1440*1150px;
-    }
-    
-    .styles {
-        height: 1118/1440*1150px;
-    }
-    
-    .price {
-        height: auto;
-    }
-    
+@media screen and (max-width: 1160px) {
     .how_work {
-        height: 839/1440*1150px;
-    }
-    
-    .team {
-        height: auto;
-    }
-    
-    .clients {
-        height: auto;
-    }
-    
-    .map {
-        height: 1295/1440*1150px;
-    }
-    
-    .footer {
-        height: 133/1440*1150px;
+        display: none;
     }
 }
-
-
-
-
-@media screen and (max-width: 375px) {
-    body {
-        max-width: 375px;
+@media screen and (max-width: 800px) {
+    .footer {
+        display: none;
+    }
+}
+@media screen and (max-width: 700px) {
+    .styles {
         height: auto;
     }
-    
-    .header {
-        height: 533px;
-        background-color: red;
+}
+@media screen and (max-width: 550px) {
+    body {
+        width: 100%;
+        height: auto;
     }
-    
+    .header {
+        height: auto;
+    }
     .projects {
         height: 700px;
     }
-    
     .video {
         height: 552px;
     }
-    
     .personal_data {
         height: 355px;
     }
-    
     .repair_types {
         height: auto;
     }
-    
     .free_service {
         display: none;
     }
-    
     .styles {
-        height: 590px;
+        height: auto;
     }
-    
     .price {
         height: auto;
     }
-    
     .how_work {
         display: none;
     }
-    
     .team {
         height: auto;
     }
-    
     .clients {
         display: none;
     }
-    
+    .questions {
+        display: grid;
+        height: auto;
+    }
     .map {
-        height: 875px;
+        display: flex;
+        height: auto;
     }
-    
-    .footer {
-        height: 171px;
-    }
-
 }

@@ -1,0 +1,281 @@
+.header {
+    grid-template-areas:
+    'inst nav nav'
+    'inst cont cont';
+    grid-template-rows: 82px 1fr;
+    grid-template-columns: 82px 1fr;
+    background-color: $dark-color;
+    @media screen and (max-width: 1000px) {
+        grid-template-areas:
+        "nav nav"
+        "cont cont";
+        grid-template-rows: 82px 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+.header-navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: nav;
+    button {
+        flex-basis: 8%;
+        font-family: 'Futurabook';
+        color: $light-color;
+        background-color:transparent;
+        border:0;
+        display:inline-block;
+        cursor:pointer;
+        &:hover {
+            background-color:transparent;
+            color: $main-color;
+            text-decoration: underline;
+        }
+        &:active {
+            border: 0;
+            top:1px;
+        }
+        @media screen and (max-width: 550px) {
+            display: none;
+        }
+    }
+    a {
+        font-family: 'Futurabook';
+        color: $main-color;
+        text-decoration: underline;
+        flex-basis: 11%;
+        @media screen and (max-width: 550px) {
+            flex-basis: 100%;
+            margin-right: 5px;
+            color: white;
+            text-align: right;
+            text-decoration: none;
+        }
+    }
+    h3 {
+        flex-basis: 25%;
+        @media screen and (max-width: 550px) {
+            flex-basis: 100%;
+        }
+    }
+    .header-request_btn {
+        width: 200px;
+        height: 45%;
+        background-color: $main-color;
+        border: 0;
+        color:#ffffff;
+        text-decoration:none;
+        box-shadow: 0px 11px 48px -8px  $main-color;
+        &:hover {
+            background-color: $main-color;
+            color: white;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        font-size: 14px;
+    }
+}
+.header-home_btn {
+    color: $main-color;
+}
+.header-instagram {
+    position: relative;
+    display: flex;
+    grid-area: inst;
+    flex-direction: column;
+    font-family: 'futurademic';
+    color: $main-color;
+    a {
+        color: $main-color;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+}
+.header-line {
+    position: absolute;
+    width: 46px;
+    top: 496px;
+    left: 21px;
+    color: #E3B873;
+    border: 1px solid;
+    transform: rotate(90deg);
+}
+.inst_title {
+    margin: auto;
+    transform: rotate(90deg);      
+}
+.header-content {
+    display: grid;
+    grid-area: cont;
+    grid-template-areas:
+    'h2 h'
+    'p h'
+    'btns h';
+    grid-template-rows: 45% 15% 1fr;
+    grid-template-columns: 53% 1fr;
+    background-color: $dark-color;
+    background: url("assets/images/header-background.png") 100% 0% no-repeat;
+    .header-content-title {
+        display: grid;
+        grid-area: h2;
+        align-items: end;
+        color: white;
+        h1 {
+            justify-self: center;
+        }
+        span {
+            color: $main-color;
+        }
+    }
+    .header-content-paragraph {
+        display: flex;
+        margin-left: 14%; 
+        grid-area: p;
+        font-family: 'FuturaBook';
+        font-size: 1.375em;
+        line-height: 30px;
+        color: #FFFFFF;
+        p {
+            flex-basis: 80%;
+            @media screen and (max-width: 550px) {
+                flex-basis: 100%;
+            }
+        }
+        @media screen and (max-width: 550px) {
+            margin: 0;
+            align-self: center;
+            justify-content: center;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .header-content-buttons {
+        display: flex;
+        grid-area: btns;
+        margin-top: 50px;
+        align-content: stretch;
+        justify-content: flex-start;
+        .header-content-submit {
+            width: 220px;
+            height: 20%;
+            margin-left: 15px;
+            font-family: 'Futurabook';
+            color: $light-color;
+            background-color:transparent;
+            border: 1px solid white;
+            display:inline-block;
+            cursor:pointer;
+            &:hover {
+                background-color:transparent;
+                text-decoration: underline;
+            }
+            &:active {
+                position:relative;
+                border: 1px solid $main-color;
+                top:1px;
+            }
+            @media screen and (max-width: 550px) {
+                height: 50px;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+        .header-content-calculate {
+            width: 220px;
+            margin-left: 14%;
+            height: 20%;
+            background-color: $main-color;
+            border: 0;
+            color:#ffffff;
+            text-decoration:none;
+            box-shadow: 0px 11px 48px -8px  $main-color;
+            cursor:pointer;
+            &:hover {
+                box-shadow: 0px 11px 88px -8px  $main-color;
+                text-decoration: underline;
+            }
+            &:active {
+                position:relative;
+                border: 1px solid $main-color;
+                top:1px;
+            }
+            @media screen and (max-width: 550px) {
+                height: 50px;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+        @media screen and (max-width: 550px) {
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+            align-content: center;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr;
+    }
+    @media screen and (max-width: 550px) {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.header-scroll {
+    position: absolute;
+    width: 247px;
+    height: 97px;
+    top: 741px;
+    background-color: $dark-color;
+    button {
+        font-family: 'Yeseva One';
+        font-size: 0.875em;
+    }
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.header-scroll-btn {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: 247px;
+    height: 97px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    text-transform: uppercase;
+    background-color:transparent;
+    border: 0;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size: 1.0625em;
+    padding:16px 31px;
+    text-decoration:none;
+    padding-bottom: 30px;;
+    &:hover {
+        border: 1px solid $main-color;
+        background-color:transparent;
+    }
+    img {
+        top: 30px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-scroll {
+        display: none;  
+    }
+}
