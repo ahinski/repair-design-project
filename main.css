@@ -423,7 +423,7 @@ h4 {
   grid-area: cont;
   grid-template-areas: "h2 h" "p h" "btns h";
   grid-template-rows: 45% 15% 1fr;
-  grid-template-columns: 53% 1fr;
+  grid-template-columns: 700px 1fr;
   background-color: #131313;
   background: url("assets/images/header-background.png") 100% 0% no-repeat;
 }
@@ -449,6 +449,7 @@ h4 {
   color: #FFFFFF;
 }
 .header-content .header-content-paragraph p {
+  align-self: center;
   flex-basis: 80%;
 }
 @media screen and (max-width: 550px) {
@@ -817,7 +818,12 @@ h4 {
 .video {
   text-align: center;
   grid-template-areas: "header" "vector" "video";
-  background: #131313;
+  background: linear-gradient(to bottom, #131313 0%, #131313 63%, white 63%);
+}
+@media screen and (max-width: 550px) {
+  .video {
+    background: #131313;
+  }
 }
 
 .video-header {
@@ -850,7 +856,7 @@ h4 {
 .personal_data {
   grid-template-areas: "line" "paragraph" "form";
   grid-template-rows: 60px 30% 40%;
-  background-color: #131313;
+  background-color: white;
 }
 .personal_data p {
   grid-area: paragraph;
@@ -874,6 +880,7 @@ h4 {
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
+    background-color: #131313;
   }
 }
 
@@ -2212,13 +2219,22 @@ h4 {
 .map-icons {
   align-self: center;
 }
-.map-icons img {
+.map-icons button {
   margin-left: 15px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.map-icons button:hover img {
+  width: 31px;
+  height: 32px;
 }
 
 .map-main_image {
-  max-width: 100%;
+  max-width: 933px;
+  width: 100%;
   margin-top: 30px;
+  align-self: center;
 }
 
 @media screen and (max-width: 700px) {

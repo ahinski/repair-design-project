@@ -4,7 +4,7 @@
     'paragraph'
     'form';
     grid-template-rows: 60px 30% 40%;
-    background-color: $dark-color;
+    background-color: white;
     p {
         grid-area: paragraph;
         margin-top: 0;
@@ -24,6 +24,7 @@
         display: flex;
         flex-direction: column;
         padding-bottom: 50px;
+        background-color: $dark-color;
     }
 }
 

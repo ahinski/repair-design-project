@@ -120,7 +120,7 @@
     'p h'
     'btns h';
     grid-template-rows: 45% 15% 1fr;
-    grid-template-columns: 53% 1fr;
+    grid-template-columns: 700px 1fr;
     background-color: $dark-color;
     background: url("assets/images/header-background.png") 100% 0% no-repeat;
     .header-content-title {
@@ -144,6 +144,7 @@
         line-height: 30px;
         color: #FFFFFF;
         p {
+            align-self:center;
             flex-basis: 80%;
             @media screen and (max-width: 550px) {
                 flex-basis: 100%;

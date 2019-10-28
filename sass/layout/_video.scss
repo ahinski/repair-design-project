@@ -1,10 +1,13 @@
 .video {
     text-align: center;
     grid-template-areas:
-     'header'
-     'vector'
-     'video';
-     background: $dark-color;
+    'header'
+    'vector'
+    'video';
+    background: linear-gradient(to bottom, #131313 0%, #131313 63%, white 63%);
+    @media screen and (max-width: 550px) {
+        background: $dark-color;
+    }
 }
 .video-header {
     grid-area: header;

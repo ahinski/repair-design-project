@@ -13,13 +13,24 @@
 }
 .map-icons {
     align-self: center;
-    img {
+    button {
         margin-left: 15px;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        &:hover {
+            img {
+                width: 31px;
+                height: 32px;
+            }
+        }
     }
 }
 .map-main_image {
-    max-width: 100%;
+    max-width: 933px;
+    width: 100%;
     margin-top: 30px;
+    align-self: center;
 }
 @media screen and (max-width: 700px) {
     .map-main_image {
