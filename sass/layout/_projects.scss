@@ -30,31 +30,6 @@
     align-items: flex-end;
     margin-bottom: 53px;
     padding-right: 5%;
-    button {
-        flex-basis: 18%;
-        height: 20px;
-        font-family: 'Yeseva One';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 19px;
-        text-transform: uppercase;
-        color: $gray;
-        background-color:transparent;
-        border:0;
-        display:inline-block;
-        text-transform: uppercase;
-        cursor:pointer;
-        &:hover {
-            background-color:transparent;
-            color: $main-color;
-            text-decoration: underline;
-        }
-        &:active {
-            border: 0;
-            top:1px;
-        }
-    }
     @media screen and (max-width: 1160px) {
         display: none;
     }
@@ -136,21 +111,6 @@
         display: none;
     }
 }
-.slider_button {
-    position: absolute;
-    right: 5%;
-    top: 40%;
-    border: none;
-    cursor:pointer;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    &:hover {
-        top: 41%;
-    }
-    @media screen and (max-width: 1160px) {
-        display: none;
-    }
-}
 .project-advanced-circles {
     grid-area: circles;
     position: relative;  
@@ -160,15 +120,15 @@
     @media screen and (max-width: 1160px) {
         display: none;
     }
-  }
-  .project-advanced-circles-pagination {
+}
+.project-advanced-circles-pagination {
       position: absolute;
       left: 0;
       &:nth-child(2) { left: 30px; }
       &:nth-child(3) { left: 60px; }
       &:nth-child(4) { left: 90px; }
-  }
-  .project-advanced-circles-circle {
+}
+.project-advanced-circles-circle {
     position: absolute;
     left: 0;
     width: 10px;
@@ -176,8 +136,7 @@
     background-color: $white-gray;
     border: 1px solid $white_gray;
     border-radius: 100%;
-  }
-  
-  .active {
+}
+.active {
     background: white;
-  }
+}

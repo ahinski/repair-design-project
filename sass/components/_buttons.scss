@@ -1,0 +1,326 @@
+.header-nav-button {
+    flex-basis: 8%;
+    font-family: 'Futurabook';
+    color: $light-color;
+    background-color:transparent;
+    border:0;
+    display:inline-block;
+    cursor:pointer;
+    &:hover {
+        background-color:transparent;
+        color: $main-color;
+        text-decoration: underline;
+    }
+    &:active {
+        border: 0;
+        top:1px;
+    }
+    @media screen and (max-width: 550px) {
+        display: none;
+    }
+}
+.header-request_btn {
+    width: 200px;
+    height: 45%;
+    background-color: $main-color;
+    border: 0;
+    color:#ffffff;
+    text-decoration:none;
+    box-shadow: 0px 11px 48px -8px  $main-color;
+    &:hover {
+        background-color: $main-color;
+        color: white;
+    }
+}
+.header-home_btn {
+    color: $main-color;
+}
+.header-content-buttons {
+    display: flex;
+    grid-area: btns;
+    margin-top: 50px;
+    align-content: stretch;
+    justify-content: flex-start;
+    .header-content-submit {
+        width: 220px;
+        height: 20%;
+        margin-left: 15px;
+        font-family: 'Futurabook';
+        color: $light-color;
+        background-color:transparent;
+        border: 1px solid white;
+        display:inline-block;
+        cursor:pointer;
+        &:hover {
+            background-color:transparent;
+            text-decoration: underline;
+        }
+        &:active {
+            position:relative;
+            border: 1px solid $main-color;
+            top:1px;
+        }
+        @media screen and (max-width: 550px) {
+            height: 50px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .header-content-calculate {
+        width: 220px;
+        margin-left: 14%;
+        height: 20%;
+        background-color: $main-color;
+        border: 0;
+        color:#ffffff;
+        text-decoration:none;
+        box-shadow: 0px 11px 48px -8px  $main-color;
+        cursor:pointer;
+        &:hover {
+            box-shadow: 0px 11px 88px -8px  $main-color;
+            text-decoration: underline;
+        }
+        &:active {
+            position:relative;
+            border: 1px solid $main-color;
+            top:1px;
+        }
+        @media screen and (max-width: 550px) {
+            height: 50px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        margin: 0;
+        text-align: center;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+.header-scroll {
+    position: absolute;
+    width: 247px;
+    height: 97px;
+    top: 741px;
+    background-color: $dark-color;
+    button {
+        font-family: 'Yeseva One';
+        font-size: 0.875em;
+    }
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.header-scroll-btn {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    width: 247px;
+    height: 97px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    text-transform: uppercase;
+    background-color:transparent;
+    border: 0;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size: 1.0625em;
+    padding:16px 31px;
+    text-decoration:none;
+    padding-bottom: 30px;;
+    &:hover {
+        border: 1px solid $main-color;
+        background-color:transparent;
+    }
+    img {
+        top: 30px;
+        margin-left: 20px;
+    }
+    @media screen and (max-width: 375px) {
+        display: none;
+    }
+}
+.project-slider-nav-btn {
+    flex-basis: 18%;
+    height: 20px;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $gray;
+    background-color:transparent;
+    border:0;
+    display:inline-block;
+    text-transform: uppercase;
+    cursor:pointer;
+    &:hover {
+        background-color:transparent;
+        color: $main-color;
+        text-decoration: underline;
+    }
+    &:active {
+        border: 0;
+        top:1px;
+    }
+}
+.slider_button {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    border: none;
+    cursor:pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    &:hover {
+        top: 41%;
+    }
+    @media screen and (max-width: 1160px) {
+        display: none;
+    }
+}
+.repair_types-content-block-btn {
+    position: absolute;
+    width: 220px;
+    height: 54px;
+    top: 534px;
+    left: 32px;
+    z-index: 2;
+    font-family: 'futurademic';
+    font-size: 1.125em;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $main-color;
+    border-radius:2px;
+    border: 0;
+    display:inline-block;
+    cursor:pointer;
+    text-decoration:none;
+    &:hover {
+        box-shadow: 0px 11px 48px -8px  $main-color;
+        text-decoration: underline;
+    }
+}
+.styles-content-list-btn {
+    width: 180px;
+    flex-basis: 4%;
+    font-family: 'Proxima Nova Thin';
+    font-size: 1.125em;
+    line-height: 34px;
+    text-align: left;
+    color: white;
+    background-color:transparent;
+    border:0;
+    cursor:pointer;
+    &:hover {
+        background-color:transparent;
+        color: $main-color;
+        text-decoration: underline;
+    }
+}
+.design_price-content-list-btn {
+    position: relative;
+    width: 220px;
+    height: 54px;
+    top: 27px;
+    z-index: 2;
+    font-family: 'Yeseva One';
+    font-size: 1.125em;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $main-color;
+    border: 0;
+    display:inline-block;
+    cursor:pointer;
+    text-decoration:none;
+    &:hover {
+        box-shadow: 0px 11px 48px -8px  $main-color;
+        text-decoration: underline;
+    }
+}
+.how_work-panel-button {
+    width: 26%;
+    padding-left: 0;
+    margin-bottom: 20px;
+    font-family: 'Futurabook';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9375em;
+    line-height: 19px;
+    text-align: left;
+    color: white;
+    opacity: 0.5;
+    background-color:transparent;
+    border:0;
+    display:inline-block;
+    cursor:pointer;
+    h4 {
+        margin-bottom: 10px;
+        font-family: 'Yeseva One';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.9375em;
+        line-height: 21px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-decoration-color: $main-color;
+    }
+    &:hover {
+        opacity: 1;
+    }
+}
+.map-icons-btn {
+    margin-left: 15px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    &:hover {
+        img {
+            width: 31px;
+            height: 32px;
+        }
+    }
+}
+.footer-navigation-btn  {
+    flex-basis: 8%;
+    font-family: 'Futurabook';
+    color: $light-color;
+    background-color:transparent;
+    border:0;
+    display:inline-block;
+    cursor:pointer;
+    &:hover {
+        background-color:transparent;
+        color: $main-color;
+        text-decoration: underline;
+    }
+    &:active {
+        border: 0;
+        top:1px;
+    }
+}
+.footer-home_btn {
+    color: $main-color;
+}
+.footer-request_btn {
+    flex-basis: 11.5%;
+    height: 25%;
+    background-color: $main-color;
+    border: 0;
+    color:#ffffff;
+    text-decoration:none;
+    box-shadow: 0px 5px 36px -8px $main-color;
+    &:hover {
+        background-color: $main-color;
+        color: white;
+    }
+}

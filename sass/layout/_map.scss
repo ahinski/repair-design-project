@@ -13,18 +13,6 @@
 }
 .map-icons {
     align-self: center;
-    button {
-        margin-left: 15px;
-        background: transparent;
-        border: 0;
-        cursor: pointer;
-        &:hover {
-            img {
-                width: 31px;
-                height: 32px;
-            }
-        }
-    }
 }
 .map-main_image {
     max-width: 933px;
