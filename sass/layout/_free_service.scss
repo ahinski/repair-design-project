@@ -5,7 +5,7 @@
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: white;
-    @media screen and (max-width: 1160px) {
+    @media screen and (max-width: 1300px) {
         justify-content: space-around;
     }
 }
@@ -14,7 +14,7 @@
     width: 600px;
     height: 600px;
     position: relative;
-    @media screen and (max-width: 1160px) {
+    @media screen and (max-width: 1300px) {
         display: none;
     }
 }
@@ -33,7 +33,7 @@
     font-size: 1.125em;
     color: $body-color;
     z-index: 3;
-    @media screen and (max-width: 1420px) {
+    @media screen and (max-width: 1300px) {
         display: none;
     }
 }
@@ -41,6 +41,9 @@
     width: 400px;
     top: 215px;
     left: 410px;
+    @media screen and (max-width: 1420px) {
+        width: 200px;
+    }
 }
 .title-2 {
     width: 400px;
